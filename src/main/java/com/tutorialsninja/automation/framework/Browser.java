@@ -1,5 +1,7 @@
 package com.tutorialsninja.automation.framework;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -57,7 +59,13 @@ public class Browser {
 	public static void maximize() {
 		Base.driver.manage().window().maximize();
 	}
-
+	
+	public static void openApplicationURL() {
+		
+		Base.driver.get(Base.reader.getUrl());
+	}
+	
+	
 	public static byte[] takeScreenshot() {
 		try {
 			return ((TakesScreenshot)Base.driver).getScreenshotAs(OutputType.BYTES);
