@@ -55,8 +55,8 @@ public class BillingDetails {
     	Waits.setImplicitWait(3000);
     	Elements.selectRadioButton(wantToUseNewAddress);
     	Waits.setImplicitWait(2000);
-    	Elements.TypeText(billingFirstName, Base.reader.getFirstName());
-    	Elements.TypeText(billingLastName, Base.reader.getLastName());
+    	Elements.TypeText(billingFirstName, Base.reader.getFName());
+    	Elements.TypeText(billingLastName, Base.reader.getLName());
     	Elements.TypeText(billingCompanyName, Base.reader.getCompany());
     	Elements.TypeText(billingAddress1, Base.reader.getAddress());
     	Elements.scrollToElemet(billingRegion);

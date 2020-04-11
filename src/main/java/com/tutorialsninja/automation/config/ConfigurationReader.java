@@ -8,8 +8,8 @@ public interface ConfigurationReader {
 	public String getUsername();
 	public String getPassword();
 	public String getProduct();
-	public String getFirstName();
-	public String getLastName();
+	public String getFName();
+	public String getLName();
 	public String getCompany();
 	public String getAddress();
 	public String getCity();

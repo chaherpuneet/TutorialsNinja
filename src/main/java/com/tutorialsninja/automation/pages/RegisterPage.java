@@ -71,7 +71,6 @@ public class RegisterPage {
 		Map<String,String> map = dataTable.asMap(String.class, String.class);
 		Elements.TypeText(RegisterPage.firstName, map.get("FirstName"));
 		Elements.TypeText(RegisterPage.lastName, map.get("LastName"));
-		Elements.TypeText(RegisterPage.email,System.currentTimeMillis()+ map.get("Email"));
 		Elements.TypeText(RegisterPage.telephone, map.get("Telephone"));
 		Elements.TypeText(RegisterPage.password, map.get("Password"));
 		Elements.TypeText(RegisterPage.confirmPassword, map.get("Password"));

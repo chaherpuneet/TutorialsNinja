@@ -52,15 +52,15 @@ public class PropertyFileReader implements ConfigurationReader{
 		return properties.getProperty("product");
 	}
 
-	public String getFirstName() {
+	public String getFName() {
 		
-		return properties.getProperty("FirstName");
+		return properties.getProperty("FName");
 	}
 
 	
-	public String getLastName() {
+	public String getLName() {
 		
-		return properties.getProperty("LastName");
+		return properties.getProperty("LName");
 	}
 
 		public String getCompany() {

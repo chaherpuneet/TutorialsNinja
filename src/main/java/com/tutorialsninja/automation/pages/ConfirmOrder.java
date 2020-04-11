@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.automation.base.Base;
 import com.tutorialsninja.automation.framework.Elements;
+import com.tutorialsninja.automation.framework.Waits;
 
 public class ConfirmOrder {
 	
@@ -23,6 +24,7 @@ public class ConfirmOrder {
 	public static void clickConfirmButton() {
 		
 		Elements.click(confirmOrderButton);
+		Waits.setImplicitWait(2000);
 	}
 
 }
